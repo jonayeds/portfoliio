@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-light{
+    background-color: #ECE7E1;
+}
+.bg-dark{
+    background-color: #1A1818;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
