@@ -12,8 +12,14 @@ const SocialNavigation = () => {
         <div className=" hidden lg:block absolute top-[50%]  -rotate-90  -left-28">
         <div className="flex items-center gap-8 font-body font-light uppercase tracking-[6px] text-sm">
                 <div className="w-20 h-[2px] bg-opacity-80 bg-black"></div>
-                <i>Linkdin</i>
-                <i>Github</i>
+               <div className="group">
+               <i className="cursor-pointer">Linkdin</i>
+               <div className="w-0 group-hover:w-full duration-500 bg-black h-[1px] opacity-60 mx-auto"></div>
+               </div>
+                <div className="group">
+                <i className="cursor-pointer ">Github</i>
+                <div className="w-0 group-hover:w-full duration-500 bg-black h-[1px] opacity-60 mx-auto "></div>
+                </div>
             </div>
         </div>
     </div>
