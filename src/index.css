@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,17 @@
 }
 .bg-dark{
     background-color: #1A1818;
+}
+.text-dark{
+    color: #1A1818;
+}
+.text-light{
+    color: #ECE7E1;
+}
+
+.font-body{
+    font-family: "SUSE", sans-serif;
+    word-spacing: 8px
 }
 
 @tailwind base;

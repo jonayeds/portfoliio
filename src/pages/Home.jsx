@@ -20,9 +20,14 @@ const Home = () => {
             top: "100vh",
             height:0,
             duration: 1,
+
         },"anim")
-        .to('.text-container',{
-          x:-50,
+        .to('.overlay', {
+            display:"none",
+            duration: 0,
+        },)
+        .from('.text-container',{
+          x:70,
           delay:-0.4,
           duration:1.5,
           ease: "power2.out",
@@ -30,18 +35,23 @@ const Home = () => {
         }, "text")
         .from('.text-animation', {
           width:0,
-          marginLeft:15,
-          x:-50,
+          marginLeft:10,
+          x:-20,
             opacity:0,
             stagger:0.1,
             duration: 1.5,
         }, "text" )
+        .to(".body-text",{
+          top:0,
+          duration:1,
+          delay:-0.6,
+        })
     })
   return (
     <div  className="bg-light min-h-screen relative">
 
       {/* home loader */}
-        <div className=" absolute top-0 w-screen h-screen overflow-hidden z-20">
+        <div className=" absolute top-0 w-screen h-screen overflow-hidden  overlay">
         <div className="absolute h-[50vh] loading-animation1 w-screen top-0 bg-dark"></div>
         <div className="absolute h-screen  w-screen flex justify-center items-center  ">
           <div className="loader z-50   md:h-[6px] h-[3px] bg-light lg:w-1/3 md:w-2/3  w-3/4 rounded-full "></div>
@@ -50,8 +60,8 @@ const Home = () => {
       </div>
 
       {/* home content */}
-      <div className='h-screen flex justify-center  items-center  '>
-        <h1  className='font-heading tracking-widest uppercase text-9xl text-container relative left-[50px] space-x-8'>
+      <div className='h-screen flex justify-center flex-col  items-center  '>
+        <h1  className='font-heading tracking-widest uppercase md:text-9xl text-6xl text-container relative  md:space-x-8 text-dark  space-x-6'>
           {
             ["Sajjad", "jonayed"].map((text,  index)=>(
               <span key={index}>
@@ -64,6 +74,9 @@ const Home = () => {
             ))
           }
         </h1>
+        <div className='absolute bottom-[35vh] '>
+          <p className='md:text-3xl text-lg   mt-20 font-body uppercase font-light text-dark bg overflow-hidden'><span className='relative top-10 body-text'>full stack web developer</span></p>
+        </div>
       </div>
     </div>
   )
