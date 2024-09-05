@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 const Layout = () => {
    
   return (
-    <div className="min-h-screen bg-light">
+    <div className="min-h-screen overflow-x-hidden bg-light ">
       <NavBar/>
       <Outlet />
     </div>

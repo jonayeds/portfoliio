@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: "Rebeqa";
     src: url('./assets/fonts/OpenType-TT/Rebeqa-Bold.ttf');
@@ -33,3 +37,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
