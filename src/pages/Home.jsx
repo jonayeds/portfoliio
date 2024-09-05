@@ -51,7 +51,7 @@ const Home = () => {
     <div  className="bg-light min-h-screen relative">
 
       {/* home loader */}
-        <div className=" absolute top-0 w-screen h-screen overflow-hidden  overlay">
+        <div className=" absolute top-0 w-screen h-screen overflow-hidden z-20 overlay">
         <div className="absolute h-[50vh] loading-animation1 w-screen top-0 bg-dark"></div>
         <div className="absolute h-screen  w-screen flex justify-center items-center  ">
           <div className="loader z-50   md:h-[6px] h-[3px] bg-light lg:w-1/3 md:w-2/3  w-3/4 rounded-full "></div>
@@ -61,7 +61,7 @@ const Home = () => {
 
       {/* home content */}
       <div className='h-screen flex justify-center flex-col  items-center  '>
-        <h1  className='font-heading tracking-widest uppercase md:text-9xl text-6xl text-container relative  md:space-x-8 text-dark  space-x-6'>
+        <h1  className='font-heading tracking-widest uppercase md:text-9xl text-[15vw] text-container relative  md:space-x-8 text-dark  space-x-6'>
           {
             ["Sajjad", "jonayed"].map((text,  index)=>(
               <span key={index}>

@@ -85,7 +85,7 @@ const  handleMenuClose   = ()=>{
       </div>
         <div className='absolute w-[40px] h-[40px] z-50   "absolute top-8 right-12  p-3  cursor-pointer hidden' id='cross' onClick={handleMenuClose} ></div>
       {/* navigation  window */}
-      <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-10 menuWindow  overflow-hidden  navigation-container">
+      <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-30 menuWindow  overflow-hidden  navigation-container">
         {/* navigation content */}
             <div className="w-full">
               {
