@@ -88,7 +88,7 @@ const  handleMenuClose   = ()=>{
       {/* navigation  window */}
       <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-30 menuWindow  overflow-hidden  navigation-container ">
         {/* navigation content */}
-            <div className="w-full">
+            <div className="w-full z-30">
               {
                 ["home" ,"projects", "about", "contact" ].map((text, index)=>(
                   <NavLink onClick={handleMenuClose} to={`/${text !== "home" ? text: ''}`} key={index} className="text-7xl md:text-8xl text-container font-heading uppercase tracking-widest  block  text-light border-b-2 mt-10 py-2 md:hover:tracking-[30px]  overflow-hidden cursor-pointer"><span className="navigation-content relative  duration-500  ">{text}</span></NavLink>

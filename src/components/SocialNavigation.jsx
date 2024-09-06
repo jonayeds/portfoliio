@@ -1,7 +1,7 @@
 
 const SocialNavigation = () => {
   return (
-    <div className="absolute h-screen w-max z-20 ">
+    <div className="absolute h-screen w-max  z-20">
         <div className="lg:hidden top-9 absolute left-1  px-6 py-2">
             <div className="flex items-center gap-5 font-body font-extralight uppercase tracking-[5px] text-xs">
                 <i>Linkdin</i>
