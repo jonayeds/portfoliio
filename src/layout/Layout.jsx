@@ -9,7 +9,9 @@ const Layout = () => {
     <div className="min-h-screen overflow-x-hidden bg-light ">
       <NavBar/>
       <SocialNavigation/>
+      <div className="">
       <Outlet />
+      </div>
     </div>
   );
 };

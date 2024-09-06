@@ -1,6 +1,7 @@
 
 import {gsap} from "gsap"
 import { useGSAP } from "@gsap/react";
+import { NavLink } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -85,12 +86,12 @@ const  handleMenuClose   = ()=>{
       </div>
         <div className='absolute w-[40px] h-[40px] z-50   "absolute top-8 right-12  p-3  cursor-pointer hidden' id='cross' onClick={handleMenuClose} ></div>
       {/* navigation  window */}
-      <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-30 menuWindow  overflow-hidden  navigation-container">
+      <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-30 menuWindow  overflow-hidden  navigation-container ">
         {/* navigation content */}
             <div className="w-full">
               {
                 ["home" ,"projects", "about", "contact" ].map((text, index)=>(
-                  <p key={index} className="text-7xl md:text-8xl text-container font-heading uppercase tracking-widest  text-light border-b-2 mt-10 py-2 md:hover:tracking-[30px]  overflow-hidden cursor-pointer"><span className="navigation-content relative  duration-500  ">{text}</span></p>
+                  <NavLink onClick={handleMenuClose} to={`/${text !== "home" ? text: ''}`} key={index} className="text-7xl md:text-8xl text-container font-heading uppercase tracking-widest  block  text-light border-b-2 mt-10 py-2 md:hover:tracking-[30px]  overflow-hidden cursor-pointer"><span className="navigation-content relative  duration-500  ">{text}</span></NavLink>
                 ))
               }
             </div>
