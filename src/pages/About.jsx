@@ -1,6 +1,7 @@
 import { gsap } from 'gsap'
 import image from  "../assets/images/profile.jpg"
 import { useGSAP } from '@gsap/react';
+import CustomButton from '../components/CustomButton';
 const About = () => {
   const tl = gsap.timeline();
  useGSAP(()=>{
@@ -41,6 +42,9 @@ const About = () => {
         <p className='mt-4 pb-6 text-lg font-normal opacity-80 leading-[30px] tracking-[2px] text-dark'>
           HTML and CSS / Javascript / Tailwind CSS / <br /> React js / GSAP Animation / <br /> MongoDB / Node.js and Express.js / Mongoose
         </p>
+      <div className='pb-6 mt-2'>
+        <button className='px-10 relative py-2 border-2 border-[#1a1a1a]'><div className='absolute w-full text-center flex justify-center bg-[#ece7e1] h-full font-body font-light text-lg top-0 left-0 items-center  hover:tracking-[3px] duration-700 '>My Resume</div>My Resume</button>
+      </div>
       </div>
     </div>
   );
