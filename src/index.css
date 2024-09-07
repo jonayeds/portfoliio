@@ -8,6 +8,10 @@ html,body{
     margin: 0;
     padding: 0;
 }
+::selection{
+    background: #1a1a1a;
+    color: #ece7e1;
+}
 @font-face {
     font-family: "Rebeqa";
     src: url('./assets/fonts/OpenType-TT/Rebeqa-Bold.ttf');
