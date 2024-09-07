@@ -11,7 +11,7 @@ const SocialNavigation = () => {
                 <div className={`${ location.pathname !== '/' ? "w-full h-full  absolute top-0" : "" }`}></div>
                 <div className="w-0 group-hover:w-full duration-500 bg-black h-[1px] opacity-60 mx-auto  "></div>
                 </div>
-            <Link className="group" to={location.pathname !== "/" && "/" }>
+            <Link className={`group`} to={location.pathname !== "/" && "/" }>
                <i className="cursor-pointer">{ location.pathname === "/" ? 'Linkdin': 'Home' }</i>
                <div className="w-0 group-hover:w-full duration-500 bg-black h-[1px] opacity-60 mx-auto"></div>
                </Link>
@@ -20,10 +20,10 @@ const SocialNavigation = () => {
         </div>
         <div className={`${ location.pathname === '/' ? "hidden lg:flex absolute top-[30%]  -rotate-90  -left-28" : "hidden lg:flex absolute top-[20%]  -rotate-90  -left-28" }`}>
         <div className="flex items-center gap-8 font-body font-extralight uppercase tracking-[6px] text-xs ">
-                <div className="w-20 h-[2px] bg-opacity-80 bg-black "></div>
+                <div className={`w-20 h-[2px] bg-opacity-80 ${location.pathname ==='/contact' ? 'bg-light' : 'bg-dark'} `}></div>
                <Link className="group" to={location.pathname !== "/" && "/" }>
-               <i className="cursor-pointer">{ location.pathname === "/" ? 'Linkdin': 'Home' }</i>
-               <div className="w-0 group-hover:w-full duration-500 bg-black h-[1px] opacity-60 mx-auto"></div>
+               <i className={`${location.pathname ==='/contact'? 'cursor-pointer text-light': 'cursor-pointer text-dark'}`}>{ location.pathname === "/" ? 'Linkdin': 'Home' }</i>
+               <div className={`w-0 group-hover:w-full duration-500 h-[1px] opacity-60 mx-auto ${location.pathname ==='/contact' ? 'bg-light' : 'bg-dark'}`}></div>
                </Link>
                 <div className={` ${ location.pathname !== '/' ? "relative opacity-0" : "group" }`}>
                 <i className="cursor-pointer">Github</i>

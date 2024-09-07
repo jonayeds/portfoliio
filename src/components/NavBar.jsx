@@ -56,10 +56,8 @@ const  handleMenuClose   = ()=>{
   return (
     <div className='absolute top-0 w-full '>
       {/* hamburger */}
-      <div className="absolute top-6 right-10   w-max p-3  cursor-pointer z-40 "       >
-        <svg height="30" width="30" className=""  onMouseEnter={()=>console.log("hit")} onClick={
-          handleMenuOpen
-        } id="hamBerger">
+      <div className='absolute top-6 right-10   w-max p-3  cursor-pointer z-40'       >
+        <svg height="30" width="30" className=""   onClick={handleMenuOpen} id="hamBerger">
           <line
             className="line1"
             x1="0"
@@ -67,7 +65,7 @@ const  handleMenuClose   = ()=>{
             x2="30"
             y2="10"
             style={{
-              stroke: "rgb(0,0,0)",
+              stroke:"rgb(135, 115, 102)",
               strokeWidth: 3,
             }}
           />
@@ -78,13 +76,14 @@ const  handleMenuClose   = ()=>{
             x2="30"
             y2="20"
             style={{
-              stroke: "rgb(0,0,0)",
+              stroke:"rgb(135, 115, 102)",
               strokeWidth: 3,
             }}
           />
         </svg>
       </div>
-        <div className='absolute w-[40px] h-[40px] z-50   "absolute top-8 right-12  p-3  cursor-pointer hidden' id='cross' onClick={handleMenuClose} ></div>
+
+        <div className='absolute w-[40px] h-[40px] z-50   "absolute top-8 right-12  p-3  cursor-pointer hidden ' id='cross' onClick={handleMenuClose} ></div>
       {/* navigation  window */}
       <div className="absolute  w-screen   flex  px-[15vw] items-center h-screen bg-dark z-30 menuWindow  overflow-hidden  navigation-container ">
         {/* navigation content */}
