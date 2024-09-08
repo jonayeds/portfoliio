@@ -1,10 +1,23 @@
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap'
 import { BsTelephone } from "react-icons/bs"
 import { FaLocationArrow } from "react-icons/fa"
 import {  MdOutlineMailOutline } from "react-icons/md"
 
 const Contact = () => {
+  const tl = gsap.timeline();
+  useGSAP(()=>{
+    tl.to('.contact-loader', {
+      height:0,
+      bottom:0,
+      duration:2.5,
+      display:"none",
+      ease:"power2.inOut"
+    })
+  })
   return (
     <div className=" absolute w-screen min-h-screen bg-dark text-light">
+      <div className="absolute w-full h-full bg-light z-30 contact-loader"></div>
       <div className="max-w-[80vw] min-h-screen flex items-center justify-center mx-auto pt-24 ">
        <div className="flex flex-col space-y-16 md:flex-row  justify-evenly items-start  relative w-full">
        <div className="lg:px-20 md:px-4 md:max-w-md lg:max-w-max">
