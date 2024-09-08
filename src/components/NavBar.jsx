@@ -54,7 +54,7 @@ const  handleMenuClose   = ()=>{
   
 }
   return (
-    <div className='absolute top-0 w-full '>
+    <div className=' top-0 w-full fixed z-50'>
       {/* hamburger */}
       <div className='absolute top-6 right-10   w-max p-3  cursor-pointer z-40'       >
         <svg height="30" width="30" className=""   onClick={handleMenuOpen} id="hamBerger">

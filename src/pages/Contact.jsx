@@ -13,15 +13,23 @@ const Contact = () => {
       duration:2.5,
       display:"none",
       ease:"power2.inOut"
-    })
+    },'con')
+    tl.from(".heading",{
+      y:100,
+      opacity:0,
+      duration:0.5,
+      delay:1.5
+    },'con')
   })
   return (
-    <div className=" absolute w-screen min-h-screen bg-dark text-light">
-      <div className="absolute w-full h-full bg-light z-30 contact-loader"></div>
+    <div className="  w-full min-h-screen bg-dark text-light">
+      <div className="absolute w-screen h-screen bg-light z-30 contact-loader"></div>
       <div className="max-w-[80vw] min-h-screen flex items-center justify-center mx-auto pt-24 ">
        <div className="flex flex-col space-y-16 md:flex-row  justify-evenly items-start  relative w-full">
        <div className="lg:px-20 md:px-4 md:max-w-md lg:max-w-max">
-          <h1 className="text-9xl  font-heading text-center">Contact</h1>
+         <div className=' overflow-hidden  '>
+         <h1 className="text-9xl  font-heading text-center heading">Contact</h1>
+         </div>
           <p className="font-body text-xl opacity-80 tracking-[3px] font-extralight text-center md:text-left">Fill in the form to start a conversation</p>
           <div className="space-y-4 mt-8 font-body font-extralight opacity-90 tracking-wider">
             <p className="flex items-center gap-4"><FaLocationArrow className="text-sm" />Narayanganj, Dhaka</p>

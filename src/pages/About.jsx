@@ -24,10 +24,10 @@ const About = () => {
         </div>
 
       {/* about section content*/}
-      <div className="flex items-center justify-center  lg:gap-20 pt-32 lg:max-w-screen-2xl  mx-auto relative px-5 ">
+      <div className="flex items-center justify-center  lg:gap-20 pt-32 lg:max-w-screen-2xl  mx-auto  px-5 ">
         <div className="lg:max-w-2xl z-10   ">
         <div className='overflow-hidden'>
-        <h1 className=" text-[10rem] lg:text-center font-heading   h-full tracking-[8px] about-header  leading-none">About</h1>
+        <h1 className=" md:text-[10rem] text-8xl  mt-10 lg:mt-0 lg:text-center font-heading   h-full tracking-[8px] about-header  leading-none">About</h1>
         </div>
         <p className="font-body text-3xl font-light  tracking-[2px] leading-[45px] mt-16 lg:mt-0 ">I`m Sajjad Jonayed. A Fullstack web developer, problem solver, creative thinker.</p>
         </div>
