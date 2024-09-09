@@ -1,7 +1,9 @@
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className="min-h-screen w-screen bg-dark">
+
+    </div>
   )
 }
 
