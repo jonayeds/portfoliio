@@ -1,8 +1,8 @@
 const Projects = () => {
   return (
-    <div className="min-h-screen w-screen bg-light px-24">
-      <div className="w-full h-full flex items-end justify-around pt-32">
-        <div>
+    <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10">
+      <div className="w-full text-center h-full flex items-end justify-around flex-col md:flex-row pt-32">
+        <div className="mx-auto">
           <h1 className="text-7xl font-heading font-[100] tracking-[8px]  uppercase ">
             Projets
           </h1>
@@ -14,12 +14,13 @@ const Projects = () => {
             still learning and gaining new skills every day.
           </p>
         </div>
-        <div  className="px-10 font-body  uppercase tracking-[6px] text-6xl font-extralight">
-          <h1 className=" py-4 border-b-2  border-[#1a1a1a]">UNILINK</h1>
-          <h1 className=" py-4 border-b-2 border-[#1a1a1a]">Youshare</h1>
-          <h1 className=" py-4 border-b-2 border-[#1a1a1a]">travelia</h1>
-          <h1 className=" py-4 border-b-2 border-[#1a1a1a]">backpackers.</h1>
-          <h1 className=" py-4 border-b-2 border-[#1a1a1a]">Aultly</h1>
+        <div  className="md:px-10 font-body  uppercase tracking-[2px] md:tracking-[6px] md:text-[6vh] text-[5vh] font-[100] py-10 md:py-0 mx-auto">
+          <h1 className=" py-7 border-b-2  border-[#1a1a1a]">UNILINK</h1>
+          <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Youshare</h1>
+          <h1 className=" py-7 border-b-2 border-[#1a1a1a]">travelia</h1>
+          <h1 className=" py-7 border-b-2 border-[#1a1a1a]">backpackers.</h1>
+
+          <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Aultly</h1>
         </div>
       </div>
     </div>
