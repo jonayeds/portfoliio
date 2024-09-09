@@ -1,11 +1,33 @@
+import { useGSAP } from "@gsap/react";
+import {gsap} from "gsap"
+
 const Projects = () => {
+
+  const tl = gsap.timeline()
+  useGSAP(()=>{
+    tl.to('.project-loader', {
+      height:0,
+      duration:2,
+      ease:"power2.inOut"
+    })
+    tl.from(".heading",{
+      y:100,
+      duration:0.8,
+      delay:-0.8
+    })
+  })
   return (
-    <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10">
-      <div className="w-full text-center h-full flex items-end justify-around flex-col md:flex-row pt-32">
-        <div className="mx-auto">
-          <h1 className="text-7xl font-heading font-[100] tracking-[8px]  uppercase ">
+    <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10 flex  items-center justify-centers">
+      <div className="absolute top-0 w-screen h-screen lg:-mx-24 bg-dark -mx-4 project-loader z-30">
+
+      </div>
+      <div className="w-full text-center lg:text-left h-full flex items-end justify-around flex-col md:flex-row pt-28">
+        <div className="mx-auto py-8">
+         <div className="overflow-hidden">
+         <h1 className="text-7xl font-heading font-[100] tracking-[8px]  uppercase heading">
             Projets
           </h1>
+         </div>
           <p className="max-w-xl font-body tracking-[1.2px] mt-4s">
             This is a showcase of my best work in a variety of fields including
             Graphic and Web Design, No-Code Development, Product Design and
