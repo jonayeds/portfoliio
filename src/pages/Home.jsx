@@ -54,7 +54,7 @@ const Home = () => {
     <div  className="bg-light min-h-screen relative">
 
       {/* home loader */}
-        <div className=" absolute top-0 w-screen h-screen overflow-hidden z-40 overlay">
+        <div className=" absolute top-0 w-screen h-screen overflow-hidden z-50 overlay">
         <div className="absolute h-[50vh] loading-animation1 w-screen top-0 bg-dark"></div>
         <div className="absolute h-screen  w-screen flex justify-center items-center  ">
           <div className="loader z-50   md:h-[6px] h-[3px] bg-light lg:w-1/3 md:w-2/3  w-3/4 rounded-full "></div>
