@@ -4,6 +4,7 @@ import unilink from '../assets/images/projects/Unilink.jpg'
 const Projects = () => {
 
   const tl = gsap.timeline()
+  // const imageHover = gsap.timeline()
   useGSAP(()=>{
     tl.to('.project-loader', {
       height:0,
@@ -15,9 +16,28 @@ const Projects = () => {
       duration:0.8,
       delay:-0.8
     })
+    
   })
+  const handleMouseEnter=(e)=>{
+    gsap.to(".unilink",{
+      display:"block",
+      opacity:1,
+      scale:1,
+      top:e.pageY-128,
+      left:e.pageX+50,
+      duration:0.5
+    })
+    }
+    const handleMouseLeave=()=>{
+      gsap.to(".unilink",{
+        opacity:0,
+        scale:0,
+        duration:0.5,
+        display:"none",
+      })
+    }
   return (
-    <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10 flex  items-center justify-centers">
+    <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10 flex  items-center justify-center ">
       <div className="absolute top-0 w-screen h-screen lg:-mx-24 bg-dark -mx-4 project-loader z-30">
 
       </div>
@@ -37,9 +57,9 @@ const Projects = () => {
           </p>
         </div>
         <div  className="md:px-10 font-body  uppercase tracking-[2px] md:tracking-[6px] md:text-[6vh] text-[5vh] font-[100] py-10 md:py-0 mx-auto">
-         <div className="bg-white  relative">
+         <div className="  "  onMouseMove={handleMouseEnter} onMouseLeave={handleMouseLeave}>
          <h1 className=" py-7 border-b-2  border-[#1a1a1a] cursor-pointer">UNILINK</h1>
-         <img src={unilink} alt="" className="w-64 absolute rounded-2xl   bottom-0 right-0" />
+         <img src={unilink} alt=""  className="w-64 absolute rounded-2xl unilink hidden opacity-0 scale-0" />
          </div>
           <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Youshare</h1>
           <h1 className=" py-7 border-b-2 border-[#1a1a1a]">travelia</h1>
