@@ -13,31 +13,42 @@ const Projects = () => {
     tl.from(".heading", {
       y: 100,
       duration: 0.8,
-      delay: -0.8,
+      delay: -0.6,
     });
   });
   const handleMouseEnter = (e) => {
     const target  =e.target.innerText 
-    console.log(target)
-    gsap.to(`.${target}`, {
+   if(target){
+    gsap.to(`.${target || "saf"}`, {
       display: "block",
       opacity: 1,
       scale: 1,
-      top: e.pageY - 128,
-      left: e.pageX + 50,
-      duration: 0.5,
+      top: e.pageY - 160,
+      left: e.pageX - 340,
+      duration: 0.3,
     });
+   }else{
+    gsap.to('.projectImg', {
+      opacity: 0,
+      scale: 0,
+      duration: 0.5,
+      display: "none",
+    })
+   }
   };
   const handleMouseLeave = (e) => {
-    const target  =e.target.innerText 
-    // console.log(e)
-    gsap.to(`.${target}`, {
+    const target  =e?.target?.innerText 
+   if(target){
+    gsap.to(`.${target || "af"}`, {
       opacity: 0,
       scale: 0,
       duration: 0.5,
       display: "none",
     });
+   }
   };
+
+
   return (
     <div className="min-h-screen w-screen bg-light lg:px-24 px-4 md:px-10 flex  items-center justify-center ">
       <div className="absolute top-0 w-screen h-screen lg:-mx-24 bg-dark -mx-4 project-loader z-30"></div>
@@ -68,7 +79,7 @@ const Projects = () => {
             <img
               src={unilink}
               alt=""
-              className="w-64 absolute rounded-2xl UNILINK hidden opacity-0 scale-0 z-10 "
+              className="w-80 absolute rounded-2xl UNILINK hidden opacity-0 scale-0 z-10 projectImg"
             />
           </div>
           <div
@@ -76,11 +87,11 @@ const Projects = () => {
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Youshare</h1>
+            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare</h1>
             <img
               src={unilink}
               alt=""
-              className="w-64 absolute rounded-2xl YOUSHARE hidden opacity-0 scale-0"
+              className="w-80 absolute rounded-2xl YOUSHARE hidden opacity-0 scale-0 projectImg"
             />
           </div>
           <div
@@ -88,11 +99,11 @@ const Projects = () => {
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h1 className=" py-7 border-b-2 border-[#1a1a1a]">travelia</h1>
+            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">travelia</h1>
             <img
               src={unilink}
               alt=""
-              className="w-64 absolute rounded-2xl TRAVELIA hidden opacity-0 scale-0"
+              className="w-80 absolute rounded-2xl TRAVELIA hidden opacity-0 scale-0 projectImg"
             />
           </div>
           <div
@@ -100,22 +111,22 @@ const Projects = () => {
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h1 className=" py-7 border-b-2 border-[#1a1a1a]">backpackers</h1>
+            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">backpackers</h1>
             <img
               src={unilink}
               alt=""
-              className="w-64 absolute rounded-2xl BACKPACKERS hidden opacity-0 scale-0"
+              className="w-80 absolute rounded-2xl BACKPACKERS hidden opacity-0 scale-0 projectImg"
             />
           </div> <div
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-          <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Aultly</h1>
+          <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Aultly</h1>
             <img
               src={unilink}
               alt=""
-              className="w-64 absolute rounded-2xl AULTLY hidden opacity-0 scale-0"
+              className="w-80 absolute rounded-2xl AULTLY hidden opacity-0 scale-0 projectImg" 
             />
           </div>
 
