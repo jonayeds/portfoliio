@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import {gsap} from "gsap"
-
+import unilink from '../assets/images/projects/Unilink.jpg'
 const Projects = () => {
 
   const tl = gsap.timeline()
@@ -37,7 +37,10 @@ const Projects = () => {
           </p>
         </div>
         <div  className="md:px-10 font-body  uppercase tracking-[2px] md:tracking-[6px] md:text-[6vh] text-[5vh] font-[100] py-10 md:py-0 mx-auto">
-          <h1 className=" py-7 border-b-2  border-[#1a1a1a]">UNILINK</h1>
+         <div className="bg-white  relative">
+         <h1 className=" py-7 border-b-2  border-[#1a1a1a] cursor-pointer">UNILINK</h1>
+         <img src={unilink} alt="" className="w-64 absolute rounded-2xl   bottom-0 right-0" />
+         </div>
           <h1 className=" py-7 border-b-2 border-[#1a1a1a]">Youshare</h1>
           <h1 className=" py-7 border-b-2 border-[#1a1a1a]">travelia</h1>
           <h1 className=" py-7 border-b-2 border-[#1a1a1a]">backpackers.</h1>
