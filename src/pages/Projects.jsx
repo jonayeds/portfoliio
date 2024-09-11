@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import unilink from "../assets/images/projects/Unilink.jpg";
 import backpackers from "../assets/images/projects/Backpackers.jpg"
 import travelia from "../assets/images/projects/travelia.jpg"
+import { Link } from "react-router-dom";
 const Projects = () => {
   const tl = gsap.timeline();
   // const imageHover = gsap.timeline()
@@ -70,7 +71,8 @@ const Projects = () => {
           </p>
         </div>
         <div className="md:px-10 font-body  uppercase tracking-[2px] md:tracking-[6px] md:text-[6vh] text-[5vh] font-[100] py-10 md:py-0 mx-auto">
-          <div
+          <Link
+            to={'/project/unilink'}
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -83,8 +85,9 @@ const Projects = () => {
               alt=""
               className="w-80 absolute rounded-2xl UNILINK hidden opacity-0 scale-0 z-10 projectImg"
             />
-          </div>
-          <div
+          </Link>
+          <Link
+          to={'/project/youshare'}
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -95,8 +98,9 @@ const Projects = () => {
               alt=""
               className="w-80 absolute rounded-2xl YOUSHARE hidden opacity-0 scale-0 projectImg"
             />
-          </div>
-          <div
+          </Link>
+          <Link
+          to={'/project/travelia'}
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -107,8 +111,9 @@ const Projects = () => {
               alt=""
               className="w-80 absolute rounded-2xl TRAVELIA hidden opacity-0 scale-0 projectImg"
             />
-          </div>
-          <div
+          </Link>
+          <Link
+          to={'/project/backpackers'}
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -119,7 +124,8 @@ const Projects = () => {
               alt=""
               className="w-80 absolute rounded-2xl BACKPACKERS hidden opacity-0 scale-0 projectImg"
             />
-          </div> <div
+          </Link> <Link
+            to={'/project/aultly'}
             className="  "
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -130,7 +136,7 @@ const Projects = () => {
               alt=""
               className="w-80 absolute rounded-2xl AULTLY hidden opacity-0 scale-0 projectImg" 
             />
-          </div>
+          </Link>
 
           
           
