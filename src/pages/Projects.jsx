@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import unilink from "../assets/images/projects/Unilink.jpg";
 import backpackers from "../assets/images/projects/Backpackers.jpg"
+import travelia from "../assets/images/projects/travelia.jpg"
 const Projects = () => {
   const tl = gsap.timeline();
   // const imageHover = gsap.timeline()
@@ -90,7 +91,7 @@ const Projects = () => {
           >
             <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare</h1>
             <img
-              src={unilink}
+              src={backpackers}
               alt=""
               className="w-80 absolute rounded-2xl YOUSHARE hidden opacity-0 scale-0 projectImg"
             />
@@ -102,7 +103,7 @@ const Projects = () => {
           >
             <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">travelia</h1>
             <img
-              src={unilink}
+              src={travelia}
               alt=""
               className="w-80 absolute rounded-2xl TRAVELIA hidden opacity-0 scale-0 projectImg"
             />
@@ -125,7 +126,7 @@ const Projects = () => {
           >
           <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Aultly</h1>
             <img
-              src={unilink}
+              src={travelia}
               alt=""
               className="w-80 absolute rounded-2xl AULTLY hidden opacity-0 scale-0 projectImg" 
             />
