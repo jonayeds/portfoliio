@@ -78,7 +78,7 @@ const Home = () => {
           }
         </h1>
         <div className='absolute md:bottom-[22vh]  bottom-[28vh] z-20'>
-          <p className='md:text-3xl text-lg   mt-20 font-body uppercase font-light text-dark bg overflow-hidden'><span className='relative top-10 body-text'>full stack web developer</span></p>
+          <p className='md:text-3xl text-lg   mt-20 font-body uppercase  font-light text-dark bg overflow-hidden flex justify-center'><span className='relative top-10  body-text '>full stack web developer</span></p>
           <p className='md:text-sm text-xs   mt-2 text-center font-body uppercase font-light text-dark bg overflow-hidden tracking-[8px]'><span className='relative top-10 body-text'>based in bangladesh</span></p>
           <div className='mx-auto w-max'>
           <CustomButton />
