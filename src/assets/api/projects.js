@@ -37,17 +37,31 @@ export const allProjects = [
     {
         "name": "Aultly",
         "video": "video",
-        "photo":"",
-        "live-link":"",
-        "server_code":"",
-        "client_code":"",
-        "headline":"",
+        "photo":"https://res.cloudinary.com/dtqsckwk9/image/upload/v1726321726/Aultly_opgnqw.jpg",
+        "live-link":"https://aultly-335e4.web.app/",
+        "server_code":"https://github.com/jonayeds/AultLy-server",
+        "client_code":"https://github.com/jonayeds/AultLy",
+        "headline":"Alternate product recommendation solution. Users can post the product they want to change, others can recommend.  ",
+        "sub_description":"This is a alternate product recommendation website. Users can ask queries and other users can recommend to queries. Queries and recommendations are stored in database. UI is created with React and Tailwind. User Authentication is done with Firebase" ,
         "description":"",
         "key_features":[
-            ""
+            "Login and Registration features.",
+            "Users can post Queries",
+            "Users can recommend to Queries",
+            "Can see other users Queries and recommendations",
+            "Can find recent and most popular queries.",
+            "",
         ],
         "technologies":[
-            ""
+            "React",
+            "Tailwind css",
+            "Swiper js",
+            "Firebase",
+            "MongoDB",
+            "Express js",
+            "Node js",
+            "Daisy UI",
+            "React marquee"
         ]
 
     },

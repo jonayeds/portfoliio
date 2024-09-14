@@ -35,7 +35,7 @@ const About = () => {
           <img src={image} className="w-full  profile" alt="" />
         </div>
       </div>
-      <div className="max-w-[80vw] mx-auto px-5 ">
+      <div className="lg:max-w-[80vw] max-w-[95vw] mx-auto px-5 ">
         <p className='font-body tracking-[2px] font-light lg:mt-10 md:mt-36 mt-10 leading-[28px] '>A passionate and dedicated web developer with a strong background in creating dynamic and responsive websites. With a blend of technical skills, creativity, and a keen eye for design, I transform ideas into engaging and functional digital experiences. My journey into web development began when I started my bachelor degree and started to learn how things work on the internet. This curiosity led me to learn Web Development, where I honed my skills in various web technologies. I have worked on many projects that have challenged me to push the boundaries of what`s possible on the web. Now I`m expert in HTML, CSS, and JavaScript, with extensive experience in technologies like React and Tailwind css. Also backend technologies like express js, Node js and MongoDB as database</p>
         <p className='text-3xl mt-10 uppercase  font-body tracking-[2px]  font-light text-dark'>skills</p>
         <p className='mt-4 pb-6 text-lg font-normal opacity-80 leading-[30px] tracking-[2px] text-dark'>

@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { allProjects } from "../assets/api/projects";
 import gsap from "gsap";
 import "swiper/css";
@@ -48,14 +48,16 @@ const ProjectDetail = () => {
         </div>
 
         <div className="my-20   ">
-          <h3 className="text-4xl text-body text-dark font-light max-w-[60vw]  mx-auto text-center">
+          <h3 className="text-4xl font-body text-dark font-extralight max-w-[60vw]  mx-auto text-center">
             {project.headline}
           </h3>
-          <div className="flex items-center justify-around mt-12 text-body md:text-2xl text-xs font-light">
+          <div className="flex items-center justify-around mt-12 font-body md:text-2xl text-xs font-light" style={{
+            wordSpacing:"1px"
+          }}>
             <div className="group">
               <a
                 href={project.live_link}
-                className="flex items-center "
+                className="flex items-center cursor-pointer"
                 target="#"
               >
                 Live Demo <TiLocationArrow className="group-hover:bottom-1 bottom-0 left-0 group-hover:left-1 relative duration-300 " />
