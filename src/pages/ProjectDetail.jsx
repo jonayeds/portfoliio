@@ -1,6 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { allProjects } from "../assets/api/projects";
-import mocup from "../assets/images/projects/Unilink.jpg";
 import gsap from "gsap";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -16,7 +15,6 @@ const ProjectDetail = () => {
   );
   const tl = gsap.timeline();
   const tech = gsap.timeline();
-
   useGSAP(() => {
     tl.to(".project-loader", {
       height: "90vh",
@@ -87,7 +85,7 @@ const ProjectDetail = () => {
           </div>
           <div>
             <img
-              src={mocup}
+              src={project.photo}
               alt=""
               className="lg:w-[45vw] md:w-[60vw]  w-[90vw] mt-24 mx-auto rounded-2xl"
             />
@@ -105,10 +103,10 @@ const ProjectDetail = () => {
                   className="font-body flex  items-center justify-center gap-4 text-center font-light  text-lg mt-4 group relative "
                   key={idx}
                 >
-                  <div className="w-12 h-[2px]  hidden md:block ">
+                  <div className="w-12 h-[2px]  hidden lg:block ">
                     <div className="bg-dark group-hover:w-full w-0 duration-500 h-full mx-auto"></div>
                   </div>
-                  <p>{feature}</p>
+                  <p><TiLocationArrow className="inline-block rotate-45 mr-2 lg:hidden"/>{feature}</p>
                 </div>
               ))}
             </div>
