@@ -116,11 +116,7 @@ const ProjectDetail = () => {
                 <p>{project.description}</p>
             </div>
             <div className={project.name !== 'YouShare' && "hidden"}>
-              <div className="flex  flex-row-reverse items-center  justify-around">
-             <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391020/share8_hztnrg.png" className="w-[25vw] rounded-2xl" alt="" />
-             <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391013/share7_g6r42q.png" className="w-[25vw] rounded-2xl" alt="" />
-              <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391005/share6_qv4f0f.png" className="w-[25vw] rounded-2xl" alt="" />
-              </div>
+              <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726392685/apis_valylk.jpg" className="lg:w-[60vw] w-full  rounded-3xl mx-auto" alt="" />
                 
             </div>
             <div className="mt-12">
@@ -146,9 +142,8 @@ const ProjectDetail = () => {
             </div>
             <div className={project.name !== 'YouShare' && "hidden"}>
               <div className="flex flex-col justify-center items-center gap-12 mt-24 ">
-                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391051/share4_rofnhm.png" className="w-[75vw]  rounded-3xl" alt="" />
-                {/* <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391052/share5_sxqxp6.png" alt="" /> */}
-                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391053/share1_rnfdqu.png" alt="" className="w-[75vw] rounded-3xl" />
+                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391051/share4_rofnhm.png" className="lg:w-[75vw] w-full  rounded-3xl" alt="" />
+                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391053/share1_rnfdqu.png" alt="" className="lg:w-[75vw] w-full rounded-3xl" />
               </div>
                 
             </div>
