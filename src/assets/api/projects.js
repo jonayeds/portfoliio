@@ -99,19 +99,31 @@ export const allProjects = [
     {
         "name": "YouShare",
         "video": "video",
-        "photos":[
-            "",""
-        ],
+        "photo":"https://res.cloudinary.com/dtqsckwk9/image/upload/v1726383677/YouShare_lkq9i0.jpg",
         "live_link":"",
-        "server_code":"",
+        "server_code":"https://github.com/jonayeds/YouShare",
         "client_code":"",
-        "headline":"",
-        "description":"",
+        "headline":"A video sharing platform. Users can share videos and tweets. ",
+        "sub_description":"This is a Backend project of a video sharing platform. Server side code is written with node js and Express js and used mongoDB for database. Also used mongoose as  data modeling library for MongoDB and Node js. I've used jsonwebtoken for user authentications. To fetch data from MongoDB, mostly I've used mongoDB aggregation pipeline.",
         "key_features":[
-            ""
+            "Users can upload videos and tweets.",
+            "Can like or comment on videos and tweets.",
+            "Can delete or update videos and tweets.",
+            "Can subscribe or unsubscribe other users.",
+            "Can create playlist and add videos to playlist.",
+            "All users passwords are encrypted/hashed.",
+            "Users can update or delete video comments.",
+
         ],
         "technologies":[
-            ""
+            "Node js",
+            "Express js",
+            "Cloudinary",
+            "MongoDB",
+            "Mongoose",
+            "Jsonwebtoken",
+            "Bcrypt",
+            "Cookie parser",
         ]
 
     },

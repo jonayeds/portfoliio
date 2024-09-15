@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import unilink from "../assets/images/projects/Unilink.jpg";
 import backpackers from "../assets/images/projects/Backpackers.jpg"
 import travelia from "../assets/images/projects/travelia.jpg"
+import aultly from "../assets/images/projects/Aultly.jpg"
 import { Link } from "react-router-dom";
 const Projects = () => {
   const tl = gsap.timeline();
@@ -21,6 +22,7 @@ const Projects = () => {
   });
   const handleMouseEnter = (e) => {
     const target  =e.target.innerText 
+    console.log(target)
    if(target){
     gsap.to(`.${target || "saf"}`, {
       display: "block",
@@ -62,7 +64,7 @@ const Projects = () => {
               Projets
             </h1>
           </div>
-          <p className="max-w-xl font-body tracking-[1.2px] mt-4s">
+          <p className="max-w-xl font-body tracking-[1.2px] mt-4">
             Here are some of my recent projects. These projects showcases Frontend and Backend Development skills. 
           </p>
         </div>
@@ -88,11 +90,11 @@ const Projects = () => {
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare</h1>
+            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare<span className="text-[2vh] ">{"Backend"}</span></h1>
             <img
               src={backpackers}
               alt=""
-              className="w-80 absolute rounded-2xl YOUSHARE hidden opacity-0 scale-0 projectImg"
+              className="w-80 absolute rounded-2xl YOUSHAREBACKEND hidden opacity-0 scale-0 projectImg"
             />
           </Link>
           <Link
@@ -128,7 +130,7 @@ const Projects = () => {
           >
           <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Aultly</h1>
             <img
-              src={travelia}
+              src={aultly}
               alt=""
               className="w-80 absolute rounded-2xl AULTLY hidden opacity-0 scale-0 projectImg" 
             />

@@ -54,7 +54,7 @@ const ProjectDetail = () => {
           <div className="flex items-center justify-around mt-12 font-body md:text-2xl text-xs font-light" style={{
             wordSpacing:"1px"
           }}>
-            <div className="group">
+            <div className={`group ${project.name === "YouShare" && 'hidden'}`}>
               <a
                 href={project.live_link}
                 className="flex items-center cursor-pointer"
@@ -64,7 +64,7 @@ const ProjectDetail = () => {
               </a>
               <div className="h-[2px] group-hover:w-full w-0 duration-500 bg-dark mx-auto"></div>
             </div>
-            <div className="group">
+            <div className={`group ${project.name === "YouShare" && 'hidden'}`}>
               <a
                 href={project.client_code}
                 className="flex items-center "
