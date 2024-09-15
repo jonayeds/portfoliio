@@ -124,7 +124,7 @@ export const allProjects = [
             "Jsonwebtoken",
             "Bcrypt",
             "Cookie parser",
-        ]
+        ],
 
     },
     {

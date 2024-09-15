@@ -115,6 +115,14 @@ const ProjectDetail = () => {
             <div className="mt-12 text-dark font-body font-light text-lg">
                 <p>{project.description}</p>
             </div>
+            <div className={project.name !== 'YouShare' && "hidden"}>
+              <div className="flex  flex-row-reverse items-center  justify-around">
+             <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391020/share8_hztnrg.png" className="w-[25vw] rounded-2xl" alt="" />
+             <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391013/share7_g6r42q.png" className="w-[25vw] rounded-2xl" alt="" />
+              <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391005/share6_qv4f0f.png" className="w-[25vw] rounded-2xl" alt="" />
+              </div>
+                
+            </div>
             <div className="mt-12">
             <h2 className="font-body tracking-[4px] text-4xl font-[100] text-center uppercase ">
               Technologies used
@@ -135,6 +143,14 @@ const ProjectDetail = () => {
                 }
             </div>
             </div>
+            </div>
+            <div className={project.name !== 'YouShare' && "hidden"}>
+              <div className="flex flex-col justify-center items-center gap-12 mt-24 ">
+                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391051/share4_rofnhm.png" className="w-[75vw]  rounded-3xl" alt="" />
+                {/* <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391052/share5_sxqxp6.png" alt="" /> */}
+                <img src="https://res.cloudinary.com/dtqsckwk9/image/upload/v1726391053/share1_rnfdqu.png" alt="" className="w-[75vw] rounded-3xl" />
+              </div>
+                
             </div>
           </div>
         </div>

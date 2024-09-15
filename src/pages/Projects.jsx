@@ -4,6 +4,7 @@ import unilink from "../assets/images/projects/Unilink.jpg";
 import backpackers from "../assets/images/projects/Backpackers.jpg"
 import travelia from "../assets/images/projects/travelia.jpg"
 import aultly from "../assets/images/projects/Aultly.jpg"
+import youShare from "../assets/images/projects/YouShare.jpg"
 import { Link } from "react-router-dom";
 const Projects = () => {
   const tl = gsap.timeline();
@@ -92,7 +93,7 @@ const Projects = () => {
           >
             <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare<span className="text-[2vh] ">{"Backend"}</span></h1>
             <img
-              src={backpackers}
+              src={youShare}
               alt=""
               className="w-80 absolute rounded-2xl YOUSHAREBACKEND hidden opacity-0 scale-0 projectImg"
             />
