@@ -3,6 +3,9 @@ import { gsap } from 'gsap'
 import { BsTelephone } from "react-icons/bs"
 import { FaLocationArrow } from "react-icons/fa"
 import {  MdOutlineMailOutline } from "react-icons/md"
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+import { useRef } from 'react'
 
 const Contact = () => {
   const tl = gsap.timeline();
@@ -21,6 +24,33 @@ const Contact = () => {
       delay:1.5
     },'con')
   })
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wvpbqb5', 'template_5nv96fk', form.current, {
+        publicKey: 'peLGaIYn0r0UCgJUt',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          Swal.fire({
+            title: 'Success',
+            text: 'Message Sent',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
+          .then(result =>{
+            if(result.isConfirmed){
+                window.location.reload()
+            }
+          })
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div className="  w-full min-h-screen bg-dark text-light">
       <div className="absolute w-screen h-screen bg-light z-30 contact-loader"></div>
@@ -41,21 +71,21 @@ const Contact = () => {
         </div>
        
         <div className="md:border-l-2 h-full  w-full md:w-max md:pl-10 lg::ml-10 flex-1 ">
-          <form className="md:px-4 w-full">
+          <form ref={form} onSubmit={sendEmail} className="md:px-4 w-full">
             <div>
-              <p className="font-body font-light tracking-[1px] text-lg">Full Name</p>
-            <input type="text" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full"  />
+              <p className="font-body font-light tracking-[1px] text-lg">Name</p>
+            <input name="user_name" type="text" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full"  />
             </div>
             <div className="mt-6">
               <p className="font-body font-light tracking-[1px] text-lg">Email</p>
-            <input type="email" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full"  />
+            <input name="user_email" type="email" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full"  />
             </div>
             <div className="mt-6">
-              <p className="font-body font-light tracking-[1px] text-lg">Full Name</p>
-            <textarea type="text" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full  h-24"  />
+              <p className="font-body font-light tracking-[1px] text-lg">Your Message</p>
+            <textarea name='message' type="text" className="bg-light text-dark px-4 py-2 rounded-lg mt-2 outline-none w-full  h-24"  />
             </div>
             <div className=' mt-4 pb-8 md:pb-0 flex justify-center'>
-        <button className='px-10 relative py-2 border-2 border-[#ece7e1]'><div className='absolute w-full text-center flex justify-center bg-dark h-full font-body font-light text-lg top-0 left-0 items-center  hover:tracking-[3px] duration-500 '>Submit</div>Submit</button>
+        <button type="submit" className='px-10 relative py-2 border-2 border-[#ece7e1]'><div className='absolute w-full text-center flex justify-center bg-dark h-full font-body font-light text-lg top-0 left-0 items-center  hover:tracking-[3px] duration-500 '>Submit</div>Submit</button>
       </div>
           </form>
         </div>
