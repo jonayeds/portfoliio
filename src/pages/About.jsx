@@ -1,6 +1,7 @@
 import { gsap } from 'gsap'
 import image from  "../assets/images/profile.jpg"
 import { useGSAP } from '@gsap/react';
+import resume from "../assets/api/resume.pdf" 
 const About = () => {
   const tl = gsap.timeline();
  useGSAP(()=>{
@@ -15,6 +16,14 @@ const About = () => {
     duration:0.5,
   })
  })
+ const downLoadFile = ()=>{
+  const aTag = document.createElement('a')
+  aTag.href = resume
+  aTag.setAttribute('download', 'Resume.pdf')
+  document.body.appendChild(aTag)
+  aTag.click()
+  aTag.remove()
+}
 
 
   return (
@@ -42,7 +51,7 @@ const About = () => {
           HTML and CSS / Javascript / Tailwind CSS / <br /> React js / GSAP Animation / <br /> MongoDB / Node.js and Express.js / Mongoose
         </p>
       <div className='pb-6 mt-2'>
-        <button className='px-10 relative py-2 border-2 border-[#1a1a1a]'><div className='absolute w-full text-center flex justify-center bg-[#ece7e1] h-full font-body font-light text-lg top-0 left-0 items-center  hover:tracking-[3px] duration-700 '>My Resume</div>My Resume</button>
+        <button onClick={downLoadFile} className='px-10 relative py-2 border-2 border-[#1a1a1a]'><div className='absolute w-full text-center flex justify-center bg-[#ece7e1] h-full font-body font-light text-lg top-0 left-0 items-center  hover:tracking-[3px] duration-700 '>My Resume</div>My Resume</button>
       </div>
       </div>
     </div>
