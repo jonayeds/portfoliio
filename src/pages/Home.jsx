@@ -30,9 +30,9 @@ const Home = () => {
             duration: 0,
         },)
         .from('.text-container',{
-          x:70,
+          x:80,
           delay:-0.4,
-          duration:1.5,
+          duration:1,
           ease: "power2.out",
 
         }, "text")
@@ -42,7 +42,7 @@ const Home = () => {
           x:-20,
             opacity:0,
             stagger:0.1,
-            duration: 1.5,
+            duration: 1,
         }, "text" )
         .to(".body-text",{
           top:0,
