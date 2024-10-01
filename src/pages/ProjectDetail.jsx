@@ -48,7 +48,7 @@ const ProjectDetail = () => {
         </div>
 
         <div className="my-20   ">
-          <h3 className="text-4xl font-body text-dark font-extralight max-w-[60vw]  mx-auto text-center">
+          <h3 className="md:text-4xl sm:text-2xl text-xl font-body text-dark font-extralight max-w-[80vw]  mx-auto text-center">
             {project.headline}
           </h3>
           <div className="flex items-center justify-around mt-12 font-body md:text-2xl text-xs font-light" style={{
@@ -96,7 +96,7 @@ const ProjectDetail = () => {
             </p>
           </div>
           <div className="mt-12">
-            <h2 className="font-body tracking-[4px] text-4xl font-[100] text-center uppercase ">
+            <h2 className="font-body tracking-[4px] md:text-4xl sm:text-2xl text-xl font-[100] text-center uppercase ">
               key characteristics and features
             </h2>
             <div  className="mt-6">
@@ -120,7 +120,7 @@ const ProjectDetail = () => {
                 
             </div>
             <div className="mt-12">
-            <h2 className="font-body tracking-[4px] text-4xl font-[100] text-center uppercase ">
+            <h2 className="font-body tracking-[4px] md:text-4xl sm:text-2xl text-xl font-[100] text-center uppercase ">
               Technologies used
             </h2>
             <div className="max-w-7xl mx-auto  overflow-hidden    mt-10 tech-container cursor-default space-x-16 text-dark whitespace-nowrap " onMouseEnter={()=>tech.pause()} onMouseLeave={()=>tech.play()}>
