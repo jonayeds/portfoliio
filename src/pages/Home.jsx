@@ -49,6 +49,11 @@ const Home = () => {
           duration:1,
           delay:-0.6,
         })
+        .to(".contact",{
+          display:"block",
+          delay:1,
+        })
+
     })
   return (
     <div  className="bg-light min-h-screen relative">
