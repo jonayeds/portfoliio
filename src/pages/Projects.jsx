@@ -23,7 +23,6 @@ const Projects = () => {
   });
   const handleMouseEnter = (e) => {
     const target  =e.target.innerText 
-    console.log(target)
    if(target){
     gsap.to(`.${target || "saf"}`, {
       display: "block",
@@ -91,7 +90,7 @@ const Projects = () => {
             onMouseMove={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare<span className="text-[2vh] ">{"Backend"}</span></h1>
+            <h1 className=" py-7 border-b-2 border-[#1a1a1a] cursor-pointer">Youshare<span className="text-[2vh] pointer-events-none">{"Backend"}</span></h1>
             <img
               src={youShare}
               alt=""
