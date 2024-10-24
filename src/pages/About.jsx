@@ -1,7 +1,7 @@
 import { gsap } from 'gsap'
 import image from  "../assets/images/profile.jpg"
 import { useGSAP } from '@gsap/react';
-import resume from "../assets/api/resume.pdf" 
+import resume from "../assets/api/ResumeSajjadJonayed.pdf" 
 const About = () => {
   const tl = gsap.timeline();
  useGSAP(()=>{
