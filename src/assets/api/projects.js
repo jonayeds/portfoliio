@@ -38,7 +38,7 @@ export const allProjects = [
         "name": "Aultly",
         "video": "video",
         "photo":"https://res.cloudinary.com/dtqsckwk9/image/upload/v1726321726/Aultly_opgnqw.jpg",
-        "live-link":"https://aultly-335e4.web.app/",
+        "live_link":"https://aultly-335e4.web.app/",
         "server_code":"https://github.com/jonayeds/AultLy-server",
         "client_code":"https://github.com/jonayeds/AultLy",
         "headline":"Alternate product recommendation solution. Users can post the product they want to change, others can recommend.  ",

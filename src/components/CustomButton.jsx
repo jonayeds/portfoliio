@@ -37,7 +37,7 @@ const CustomButton = () => {
 
   return (
     <Link to={"/projects"} className='btn-tran  block overflow-hidden mx-auto'>
-        <button className="mx-auto w-max mt-5 font-body border-2 border-[#1a1818] px-4 py-2 rounded-lg font-light cursor-pointer text-[#1a1818] relative overflow-hidden btn-text-ani  " onMouseLeave={buttonLeave} onMouseEnter={buttonEnter}  onClick={()=>console.log("4")}>  My Projects <div className="absolute hidden w-2 h-2  rounded-full button-ani bg-black bottom-0 left-[50%] -z-10"></div></button>
+        <button className="mx-auto w-max mt-5 font-body border-2 border-[#1a1818] px-4 py-2 rounded-lg font-light cursor-pointer text-[#1a1818] relative overflow-hidden btn-text-ani  " onMouseLeave={buttonLeave} onMouseEnter={buttonEnter} >  My Projects <div className="absolute hidden w-2 h-2  rounded-full button-ani bg-black bottom-0 left-[50%] -z-10"></div></button>
     </Link>
   )
 }

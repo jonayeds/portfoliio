@@ -30,7 +30,7 @@ const Home = () => {
             duration: 0,
         },)
         .from('.text-container',{
-          x:80,
+          x:"12vw",
           delay:-0.4,
           duration:1,
           ease: "power2.out",
@@ -38,8 +38,8 @@ const Home = () => {
         }, "text")
         .from('.text-animation', {
           width:0,
-          marginLeft:10,
-          x:-20,
+          marginLeft:"2vw",
+          x:"-1vw",
             opacity:0,
             stagger:0.1,
             duration: 1,
@@ -69,22 +69,22 @@ const Home = () => {
 
       {/* home content */}
       <div className='h-screen flex justify-center flex-col  items-center  '>
-        <h1  className='font-heading tracking-widest uppercase md:text-9xl text-[15vw] text-container relative  md:space-x-8 text-dark  space-x-6'>
+        <h1  className='font-heading  tracking-widest uppercase  lg:text-[7vw] md:text-[10vw] text-[12vw] text-container relative  md:space-x-[3vw] text-dark  space-x-[4vw]'>
           {
             ["Sajjad", "jonayed"].map((text,  index)=>(
-              <span key={index}>
+              <span className='space-x-[0.5vw]' key={index}>
                 {
                   text.split('').map((char, i)=>(
-                    <span key={i} className={`inline-block ${i>0 && 'text-animation '}`}>{char}</span>
+                    <span key={i} className={`inline-block  ${i>0 && 'text-animation '}`}>{char}</span>
                   ))
                 }
               </span>
             ))
           }
         </h1>
-        <div className='absolute md:bottom-[22vh]  bottom-[28vh] z-20'>
-          <p className='md:text-3xl text-lg   mt-20 font-body uppercase  font-light text-dark bg overflow-hidden flex justify-center'><span className='relative top-10  body-text '>Junior web developer</span></p>
-          <p className='md:text-sm text-xs   mt-2 text-center font-body uppercase font-light text-dark bg overflow-hidden tracking-[8px]'><span className='relative top-10 body-text'>based in bangladesh</span></p>
+        <div className=' z-20'>
+          <p className=' lg:text-[2vw] md:text-[4vw] text-[5vw]   font-body uppercase  tracking-wider  font-light text-dark bg overflow-hidden flex justify-center'><span className='relative top-[6vh]  body-text '>fullstack web developer</span></p>
+          <p className='lg:text-[1vw] text-[4vw]  md:text-[4vw]  mt-[0.8vh] text-center font-body uppercase font-light text-dark bg overflow-hidden lg:tracking-[0.7vw] md:tracking-[1.5vw] tracking-[2vw]'><span className='relative top-[6vh] body-text'>based in bangladesh</span></p>
           <div className='mx-auto w-max'>
           <CustomButton />
           </div>
