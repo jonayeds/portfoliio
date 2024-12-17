@@ -13,33 +13,33 @@ useGSAP(()=>{
       y2:30,
     },
     stroke: "white",
-    delay:0.5,
-    duration: 1,
+    delay:0.3,
+    duration: 0.7,
     
-    ease: "power2.inOut",
+    ease: "power1.inOut",
   },"ham");
   tl.to(".line2", {
     attr:{
       y1:30,
       y2:0
     },
-    duration: 1,
-    delay:0.5,
+    duration: 0.7,
+    delay:0.3,
     stroke: "white",
-    ease: "power2.inOut",
+    ease: "power1.inOut",
   },"ham");
   tl.from(".menuWindow", {
-    top:"99.8vh",
+    top:"100vh",
     height:0,
     duration: 1,
-    ease: "power2.inOut",
+    ease: "power1.inOut",
   },"ham");
   tl.from(".navigation-content", {
     bottom:-150,
     duration: 0.8,
     stagger:0.1,
     delay:-1,
-    ease: "power2.inOut",
+    ease: "power2.out",
   });
 })
 tl.pause()
@@ -56,7 +56,7 @@ const  handleMenuClose   = ()=>{
   return (
     <div className=' top-0 w-full fixed z-50   '>
       {/* hamburger */}
-      <div className='absolute top-6 right-6     w-max p-3  cursor-pointer z-40'       >
+      <div className='absolute top-6 right-6     w-max p-3  cursor-pointer z-40' >
         <svg height="30" width="30" className=" "   onClick={handleMenuOpen}  id="hamBerger">
           <line
             className="line1 "
